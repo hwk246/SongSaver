@@ -1,11 +1,21 @@
 import SongOverview from "./components/SongOverview";
-import TestComponent from "./components/TestComponent";
+import Nav from "../src/components/Nav";
+import About from "./components/About";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <SongOverview />
-      <TestComponent />
+      <Router>
+        <div>
+          <Nav />
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/playlist" element={<SongOverview />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }

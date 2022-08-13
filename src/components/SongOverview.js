@@ -1,6 +1,5 @@
 import { Component } from "react";
 import SongForm from "./SongForm";
-
 import SongList from "./SongList";
 
 class SongOverview extends Component {
@@ -29,7 +28,7 @@ class SongOverview extends Component {
   render() {
     return (
       <div>
-        <h1>Songsaver Playlist</h1>
+        <h1>Playlist</h1>
         <SongForm addSong={this.addSong} />
         <table style={{ width: "100%" }}>
           <thead>
