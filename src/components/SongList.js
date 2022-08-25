@@ -1,14 +1,16 @@
-function SongList(props) {
-  return props.songs.map((song) => {
-    return (
-      <tr key={song.key}>
-        <td>{song.title}</td>
-        <td>{song.artist}</td>
-        <td>{song.genre}</td>
-        <td>{song.rating}</td>
-      </tr>
-    );
-  });
+import { useSelector } from "react-redux";
+
+function SongList() {
+  const titel = useSelector((state) => state.reduxSong.songs);
+  console.log(titel);
+  return titel.map((liedje) => (
+    <tr>
+      <td>{liedje.title}</td>
+      <td>{liedje.artist}</td>
+      <td>{liedje.genre}</td>
+      <td>{liedje.rating}</td>
+    </tr>
+  ));
 }
 
 export default SongList;

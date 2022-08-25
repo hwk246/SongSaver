@@ -1,6 +1,9 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addAnotherSong } from "../redux/features/songSlice";
 
 function SongForm(props) {
+  const dispatch = useDispatch();
   const [newSong, setNewSong] = useState({ key: 0 });
   const [key, setKey] = useState(1);
 
@@ -17,7 +20,7 @@ function SongForm(props) {
   function handleSubmit(e) {
     e.preventDefault();
     addKey();
-    props.addSong(newSong);
+    dispatch(addAnotherSong(newSong));
   }
 
   return (
