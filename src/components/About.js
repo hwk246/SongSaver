@@ -16,14 +16,16 @@ function About() {
         accidentally deleted the main project. Not happy to start all over but
         in the end a good exercise. Even for the second time I ran into some
         problems with the setState. The improvement came from adding a function
-        to assign a key to the song object. This could be usefull if I decided
-        to have a delete function. The deleted version just had a key-assignment
-        as a property in the songList component. The key was not part of the
-        object.
+        to assign a key to the state.song object . This could be usefull if I
+        decided to add a delete function later on.
       </p>
       <p>
         Writing this I just finnished the rough outlines of the routing option.
         Next step is to make a branch for developing Redux. Fingers crossed!!!
+      </p>
+      <p>
+        Redux-toolkit is used because of the more compact syntax for 'slices'
+        wich combine the reducers and the actions.
       </p>
     </div>
   );
