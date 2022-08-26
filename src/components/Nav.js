@@ -5,14 +5,14 @@ function Nav() {
   return (
     <nav>
       <ul>
-        <Link to="about" style={{ listStyle: "none", textDecoration: "none" }}>
-          <li>About</li>
-        </Link>
         <Link
           to="playlist"
           style={{ listStyle: "none", textDecoration: "none" }}
         >
           <li>Playlist</li>
+        </Link>
+        <Link to="about" style={{ listStyle: "none", textDecoration: "none" }}>
+          <li>About</li>
         </Link>
       </ul>
     </nav>

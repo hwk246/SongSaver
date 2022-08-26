@@ -1,18 +1,19 @@
-$backgrounColor: #bebebe;
-$navigationColr: #3d3d3d;
-$navtekst: #cccccc;
+$backgroundColor: #bebebe;
+$navbarBackgroundColor: #3680c5;
+$navbarTextColor: #cccccc;
 $formBackground: #459ff3;
 $inputBackground: #fafafa;
 $headTextColor: #3d3d3d;
 
 body {
-  background: $backgrounColor;
+  background: $backgroundColor;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 nav {
-  background: $navigationColr;
-  box-shadow: 1px 1px 15px 1px #000000;
+  background: $navbarBackgroundColor;
+  opacity: 0.8;
+  box-shadow: 0px 1px 15px 1px rgb(114, 114, 114);
   margin: auto;
   & ul {
     margin-right: 20px;
@@ -20,7 +21,7 @@ nav {
     justify-content: right;
     & li {
       padding: 15px;
-      color: $navtekst;
+      color: $navbarTextColor;
       font-size: 1.2em;
       &:hover {
         transform: scale(1.1);
@@ -29,20 +30,34 @@ nav {
   }
 }
 
+h2 {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  bottom: 40px;
+  color: #636363;
+  margin: auto;
+  width: 500px;
+}
+
 .functional-buttons {
   display: flex;
   justify-content: left;
   & button {
-    margin-right: 30px;
-    margin-top: 30px;
+    margin-left: 40px;
     margin-bottom: 10px;
-
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
 
 .song-form {
   & form {
+    border-radius: 5px;
     background: $formBackground;
     height: 40px;
     border-top: 1px solid black;
@@ -50,6 +65,7 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 15px;
 
     & input,
     select {
@@ -73,27 +89,39 @@ nav {
       border-radius: 2px;
       height: 30px;
       font-size: 18px;
+      cursor: pointer;
     }
   }
 }
 
 table {
-  background: #3680c5;
+  background: $navbarBackgroundColor;
   border-collapse: collapse;
-
+  width: 97vw;
+  margin: auto;
+  box-shadow: 0px 1px 15px 1px rgb(139, 139, 139);
   & thead {
     color: $headTextColor;
-
-    & tr th {
-      width: 25%;
+    & tr {
+      & th {
+        width: 25%;
+      }
     }
   }
   & tbody {
-    color: #fafafa;
+    color: $headTextColor;
     text-align: center;
+
+    & tr {
+      background-color: $formBackground;
+      & td {
+        border-top: 2px solid #bebebe;
+      }
+    }
   }
 }
 
-tr td {
-  border-top: 2px solid #bebebe;
+p {
+  width: 80%;
+  margin: auto;
 }

@@ -5,9 +5,10 @@ import SongList from "./SongList";
 function SongOverview() {
   return (
     <div>
+      <h2>Songsaver Playlist</h2>
       <FunctionButtons />
       <SongForm />
-      <table style={{ width: "100%" }}>
+      <table>
         <thead>
           <tr className="song-header">
             <th className="song-row__item">Song</th>
