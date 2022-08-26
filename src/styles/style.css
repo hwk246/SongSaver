@@ -1,0 +1,83 @@
+body {
+  background: #bebebe;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav {
+  background: #3d3d3d;
+  box-shadow: 1px 1px 15px 1px #000000;
+  margin: auto;
+}
+nav ul {
+  margin-right: 20px;
+  display: flex;
+  justify-content: right;
+}
+nav ul li {
+  padding: 15px;
+  color: #cccccc;
+  font-size: 1.2em;
+}
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+.functional-buttons {
+  display: flex;
+  justify-content: left;
+}
+.functional-buttons button {
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.song-form form {
+  background: #459ff3;
+  height: 40px;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.song-form form input,
+.song-form form select {
+  height: 20px;
+  background: #fafafa;
+  border: none;
+}
+.song-form form input {
+  width: 30vw;
+}
+.song-form form label select {
+  margin-left: 5px;
+}
+.song-form form button {
+  background: #808080;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+  font-size: 18px;
+}
+
+table {
+  background: #3680c5;
+  border-collapse: collapse;
+}
+table thead {
+  color: #3d3d3d;
+}
+table thead tr th {
+  width: 25%;
+}
+table tbody {
+  color: #fafafa;
+  text-align: center;
+}
+
+tr td {
+  border-top: 2px solid #bebebe;
+}/*# sourceMappingURL=style.css.map */

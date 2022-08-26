@@ -5,7 +5,7 @@ import SongList from "./SongList";
 function SongOverview() {
   return (
     <div>
-      <h1>Playlist</h1>
+      <FunctionButtons />
       <SongForm />
       <table style={{ width: "100%" }}>
         <thead>
@@ -20,7 +20,6 @@ function SongOverview() {
           <SongList />
         </tbody>
       </table>
-      <FunctionButtons />
     </div>
   );
 }

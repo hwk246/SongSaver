@@ -24,7 +24,7 @@ function SongForm() {
   }
 
   return (
-    <div>
+    <div className="song-form">
       <form onSubmit={handleSubmit}>
         <input
           onChange={(e) => addToLocalState(e)}
@@ -38,20 +38,26 @@ function SongForm() {
           placeholder="Artist"
           name="artist"
         ></input>
-        <select onChange={addToLocalState} name="genre">
-          <option placeholder="genre"></option>
-          <option value="jazz">Jazz</option>
-          <option value="pop">Pop</option>
-          <option value="classic">Classic</option>
-        </select>
-        <select onChange={addToLocalState} name="rating">
-          <option></option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <label>
+          genre:
+          <select onChange={addToLocalState} name="genre">
+            <option placeholder="genre"></option>
+            <option value="jazz">Jazz</option>
+            <option value="pop">Pop</option>
+            <option value="classic">Classic</option>
+          </select>
+        </label>
+        <label>
+          rating:{" "}
+          <select onChange={addToLocalState} name="rating">
+            <option></option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </label>
         <button type="submit">Add Song</button>
       </form>
     </div>

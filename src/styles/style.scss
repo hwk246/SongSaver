@@ -1,0 +1,99 @@
+$backgrounColor: #bebebe;
+$navigationColr: #3d3d3d;
+$navtekst: #cccccc;
+$formBackground: #459ff3;
+$inputBackground: #fafafa;
+$headTextColor: #3d3d3d;
+
+body {
+  background: $backgrounColor;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav {
+  background: $navigationColr;
+  box-shadow: 1px 1px 15px 1px #000000;
+  margin: auto;
+  & ul {
+    margin-right: 20px;
+    display: flex;
+    justify-content: right;
+    & li {
+      padding: 15px;
+      color: $navtekst;
+      font-size: 1.2em;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.functional-buttons {
+  display: flex;
+  justify-content: left;
+  & button {
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+  }
+}
+
+.song-form {
+  & form {
+    background: $formBackground;
+    height: 40px;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & input,
+    select {
+      height: 20px;
+      background: $inputBackground;
+      border: none;
+    }
+
+    & input {
+      width: 30vw;
+    }
+    & label {
+      & select {
+        margin-left: 5px;
+      }
+    }
+    & button {
+      background: #808080;
+      color: #ffffff;
+      border: none;
+      border-radius: 2px;
+      height: 30px;
+      font-size: 18px;
+    }
+  }
+}
+
+table {
+  background: #3680c5;
+  border-collapse: collapse;
+
+  & thead {
+    color: $headTextColor;
+
+    & tr th {
+      width: 25%;
+    }
+  }
+  & tbody {
+    color: #fafafa;
+    text-align: center;
+  }
+}
+
+tr td {
+  border-top: 2px solid #bebebe;
+}

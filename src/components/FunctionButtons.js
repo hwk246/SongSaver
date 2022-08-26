@@ -7,16 +7,14 @@ import { useDispatch } from "react-redux";
 const FunctionButtons = () => {
   const dispatch = useDispatch();
   return (
-    <div>
-      <div className="functionButtons">
-        <button onClick={() => dispatch(resetAll())}>Reset Playlist</button>
-        <button onClick={() => dispatch(orderBySongAZ())}>
-          Order Songs (A-Z)
-        </button>
-        <button onClick={() => dispatch(orderBySongZA())}>
-          Order Songs (Z-A)
-        </button>
-      </div>
+    <div className="functional-buttons">
+      <button onClick={() => dispatch(orderBySongAZ())}>
+        Order Songs (A-Z)
+      </button>
+      <button onClick={() => dispatch(orderBySongZA())}>
+        Order Songs (Z-A)
+      </button>
+      <button onClick={() => dispatch(resetAll())}>Reset Playlist</button>
     </div>
   );
 };
